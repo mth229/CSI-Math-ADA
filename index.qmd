@@ -1,0 +1,20 @@
+# ADA and the Math Department
+
+The Department of Mathematics takes compliance with the requirements of the [ADA](https://www.ada.gov/).
+
+
+In spring of 2023, CUNY entered into an [voluntary agreement](https://www.justice.gov/usao-sdny/pr/us-attorney-announces-agreement-city-university-new-york-remedy-exclusion-student) with the Southern District of New York. This was in response to a student complaint in 2011 that WebAssign was not accessible given their needs. ("That digital platform was not fully capable of reading out mathematical and scientific symbols and equations.")
+
+Part of the settlement included:
+
+* The prompt availability of accessible course materials by the start of the relevant course or as soon as practicable based upon early consultations with affected students;
+
+* nformation Technology accessibility consistent with the latest Web Content Accessibility Guidelines, including via verification of the accessibility of third-party learning products and of instructors’ awareness of accessibility requirements for instructor-created content;
+
+This page attempts to make aware the  accessibility requirements for instructor-created content, as commonly done in a mathematics class.
+
+## The technology stack
+
+Math classes at CSI use several different technology stacks. For online homework we use all of WebAssign, Achieve, and WeBWorK.
+
+To generate course materials, many instructors use LaTeX to create pdf, many use a markdown variant and Quarto to generate pdf and HTML pages, others use Microsoft Word, and still others have their own solutions.

@@ -1,0 +1,34 @@
+project:
+  type: book
+
+book:
+  title: "ADA compliance notes"
+  author: "CSI Math department"
+  date: now
+  search: true
+  repo-url: https://github.com/mth229/CSI-Math-ADA
+  repo-branch: main
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - part: "Technologies"
+      chapters:
+        - webwork.qmd
+        - webassign.qmd
+        - Achieve.qmd
+        - latex.qmd
+	- markdown.qmd
+        - quarto.qmd
+        - ms-word.qmd
+
+format:
+  html:
+    theme: spacelab
+    number-depth: 3
+    toc-depth: 3
+    link-external-newwindow: true
+    include-after: <script  src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@v0.1.4/index.min.js"  data-chatbotId="index-pdf-k527qtaap" ></script>
+
+execute:
+  error: true
+  freeze: false # auto
