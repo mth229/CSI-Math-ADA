@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ADA compliance notes",
+    "section": "",
+    "text": "1 ADA and the Math Department\nThe Department of Mathematics takes seriously compliance with the requirements of the ADA.\nIn spring of 2023, CUNY entered into an voluntary agreement with the Southern District of New York. This was in response to a student complaint in 2011 that WebAssign was not accessible given their needs. (“That digital platform was not fully capable of reading out mathematical and scientific symbols and equations.”)\nPart of the settlement included:\nThis page attempts to make aware the accessibility requirements for instructor-created content, as commonly done in a mathematics class."
+  },
+  {
+    "objectID": "index.html#the-technology-stack",
+    "href": "index.html#the-technology-stack",
+    "title": "ADA compliance notes",
+    "section": "1.1 The technology stack",
+    "text": "1.1 The technology stack\nMath classes at CSI use several different technology stacks. For online homework we use all of WebAssign, Achieve, and WeBWorK.\nTo generate course materials, many instructors use LaTeX to create pdf, many use a markdown variant and Quarto to generate pdf and HTML pages, others use Microsoft Word, and still others have their own solutions.\nThese pages contain working notes on each of these."
+  },
+  {
+    "objectID": "ada-tools.html",
+    "href": "ada-tools.html",
+    "title": "2  Tools to check for ADA compliance",
+    "section": "",
+    "text": "https://www.w3.org/WAI/standards-guidelines/wcag/\n\nWCAG are guidelines, internationally accepted, describing how to make web content more accessible to people with disabilities.\n\nhttps://wave.webaim.org/ WAVE provides a plugin for a browser making it easy and informative to check for Web Content Accessibility Guideline (WCAG) errors."
+  },
+  {
+    "objectID": "webwork.html",
+    "href": "webwork.html",
+    "title": "3  Notes on WeBWork",
+    "section": "",
+    "text": "WeBWorK is a system, sponsored by the Mathematical Association of America, using in the department of mathematics for online homework and quizzes.\n\n\nthere is a webwork frontend called “edfinity” that touts their ADA compliance: https://edfinity.com/vpat"
+  },
+  {
+    "objectID": "Achieve.html",
+    "href": "Achieve.html",
+    "title": "5  Notes on Achieve",
+    "section": "",
+    "text": "Achieve is a course supplement available with MacMillan adoptions.\nhttps://www.macmillanlearning.com/college/us/our-story/accessibility"
+  }
+]

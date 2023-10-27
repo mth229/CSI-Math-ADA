@@ -1,0 +1,7 @@
+# Tools to check for ADA compliance
+
+* [https://www.w3.org/WAI/standards-guidelines/wcag/](https://www.w3.org/WAI/standards-guidelines/wcag/)
+
+WCAG are guidelines, internationally accepted, describing how to make web content more accessible to people with disabilities.
+
+* [https://wave.webaim.org/](https://wave.webaim.org/) WAVE provides a plugin for a browser making it easy and informative to check for Web Content Accessibility Guideline (WCAG) errors.

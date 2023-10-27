@@ -1,1 +1,10 @@
 # Notes on LaTeX
+
+
+Three links of interest (re: accessible LaTeX):
+
+https://libguides.lib.msu.edu/c.php?g=995742&p=8207771
+
+https://www.ams.org/journals/notices/202301/rnoti-p68.pdf
+
+https://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files
