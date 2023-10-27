@@ -61,5 +61,19 @@
     "title": "9  Notes on Microsoft Word",
     "section": "",
     "text": "Here’s a government website for Word Documents: https://www.section508.gov/create/documents/"
+  },
+  {
+    "objectID": "html.html#guidance",
+    "href": "html.html#guidance",
+    "title": "10  Notes on HTML/CSS",
+    "section": "10.1 Guidance:",
+    "text": "10.1 Guidance:\n\nPage title (&lt;title&gt;&lt;/title&gt;)\n\nshould adequately and briefly describe the content of the page\nshould be different from other pages on the same website\n\nImage alternative text (alt-text) (&lt;img alt=\"...\")\n\nEvery functional image (e.g. figures) should have a descriptive alt-text\nDecorative image which do not need description, should have a null alt-text (alt=\"\")\n\nText\n\nUse semantic headings (&lt;h1&gt;, &lt;h2&gt;,…) rather than &lt;div&gt; or &lt;span&gt;\nAim for good contrast between different colors (7:1). Larger text is allowed to have a slightly lower contrast ratio (4.5:1). Test this with tools such as from WebAIM or Mozilla Firefox’s accessibility dev tools (F12).\nText should resize well. Test zooming in to 200%.\n\nStructure\n\nUse semantic tags (e.g. &lt;header&gt;, &lt;main&gt;, &lt;section&gt;) where possible, rather than &lt;div&gt;. Likewise, prefer &lt;em&gt; and &lt;strong&gt; rather than &lt;i&gt;, &lt;b&gt; or &lt;span&gt;.\n\nInteractivity\n\nTabbing order (tab) for links should be visible and follow a logical order through the page"
+  },
+  {
+    "objectID": "html.html#links",
+    "href": "html.html#links",
+    "title": "10  Notes on HTML/CSS",
+    "section": "10.2 Links",
+    "text": "10.2 Links\n\nCUNY guidance on web accessibility\nW3C Web Accessibility Initiative"
   }
 ]

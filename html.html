@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ADA compliance notes - 5&nbsp; Notes on Achieve</title>
+<title>ADA compliance notes - 10&nbsp; Notes on HTML/CSS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./latex.html" rel="next">
-<link href="./webassign.html" rel="prev">
+<link href="./ms-word.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ada-tools.html">Technologies</a></li><li class="breadcrumb-item"><a href="./achieve.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Notes on Achieve</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ada-tools.html">Technologies</a></li><li class="breadcrumb-item"><a href="./html.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Notes on HTML/CSS</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -137,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./achieve.html" class="sidebar-item-text sidebar-link active">
+  <a href="./achieve.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Notes on Achieve</span></span></a>
   </div>
 </li>
@@ -167,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./html.html" class="sidebar-item-text sidebar-link">
+  <a href="./html.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Notes on HTML/CSS</span></span></a>
   </div>
 </li>
@@ -179,14 +178,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#guidance" id="toc-guidance" class="nav-link active" data-scroll-target="#guidance"><span class="header-section-number">10.1</span> Guidance:</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links"><span class="header-section-number">10.2</span> Links</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mth229/CSI-Math-ADA/edit/main/html.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mth229/CSI-Math-ADA/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Notes on Achieve</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Notes on HTML/CSS</span></h1>
 </div>
 
 
@@ -201,10 +207,45 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="https://achieve.macmillanlearning.com/start">Achieve</a> is a course supplement available with MacMillan adoptions.</p>
-<p>https://www.macmillanlearning.com/college/us/our-story/accessibility</p>
+<p>Adapted from the W3C’s <a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks</a> and CUNY <a href="https://www.cuny.edu/accessibility/content/websites/">Guidance</a>.</p>
+<section id="guidance" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="guidance"><span class="header-section-number">10.1</span> Guidance:</h2>
+<ul>
+<li>Page title (<code>&lt;title&gt;&lt;/title&gt;</code>)
+<ul>
+<li>should adequately and briefly describe the content of the page</li>
+<li>should be different from other pages on the same website</li>
+</ul></li>
+<li>Image alternative text (alt-text) (<code>&lt;img alt="..."</code>)
+<ul>
+<li>Every functional image (e.g.&nbsp;figures) should have a descriptive alt-text</li>
+<li>Decorative image which do not need description, should have a null alt-text (<code>alt=""</code>)</li>
+</ul></li>
+<li>Text
+<ul>
+<li>Use semantic headings (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,…) rather than <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code></li>
+<li>Aim for good contrast between different colors (7:1). Larger text is allowed to have a slightly lower contrast ratio (4.5:1). Test this with tools such as <a href="https://webaim.org/resources/contrastchecker/">from WebAIM</a> or Mozilla Firefox’s accessibility dev tools (<kbd>F12</kbd>).</li>
+<li>Text should resize well. Test zooming in to 200%.</li>
+</ul></li>
+<li>Structure
+<ul>
+<li>Use <a href="https://developer.mozilla.org/en-US/docs/Glossary/semantics#semantic_elements">semantic tags</a> (e.g.&nbsp;<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) where possible, rather than <code>&lt;div&gt;</code>. Likewise, prefer <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> rather than <code>&lt;i&gt;</code>, <code>&lt;b&gt;</code> or <code>&lt;span&gt;</code>.</li>
+</ul></li>
+<li>Interactivity
+<ul>
+<li>Tabbing order (<kbd>tab</kbd>) for links should be visible and follow a logical order through the page</li>
+</ul></li>
+</ul>
+</section>
+<section id="links" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="links"><span class="header-section-number">10.2</span> Links</h2>
+<ul>
+<li><a href="https://www.cuny.edu/accessibility/content/websites/">CUNY guidance on web accessibility</a></li>
+<li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -456,18 +497,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./webassign.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Notes on WebAssign</span></span>
+      <a href="./ms-word.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Notes on Microsoft Word</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./latex.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Notes on LaTeX</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mth229/CSI-Math-ADA/edit/main/achieve.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mth229/CSI-Math-ADA/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@v0.1.4/index.min.js" data-chatbotid="index-pdf-k527qtaap"></script>
+<script src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@v0.1.4/index.min.js" data-chatbotid="index-pdf-k527qtaap"></script>
 
 
 
