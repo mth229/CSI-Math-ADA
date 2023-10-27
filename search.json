@@ -54,5 +54,12 @@
     "title": "8  Notes on Quarto",
     "section": "",
     "text": "Quarto is an open-source scientific and technical publishing system which can be used to publish in HTML, PDF, and other formats. A key feature is easy integration with programming languages like Julia, R, and Python.\n\nOne issue I’m running into now is Quarto isn’t able to produce tagged PDF/A documents. At least not with what I tried which is just\n(it doesn’t understand how Quarto’s tables are produced and isn’t able to compile).\nQuarto is built on Pandoc which then uses pdflatex so the accessibility information needs to be passed through multiple levels. Pandoc has more info at 1 and 2. The suggestion with Pandoc is to use ConTeXt instead of LaTeX since ConTeXt always produces tagged documents, although Pandoc requires an extension in order to optimize for tagging.\nSummary: Quarto is not suitable for producing tagged PDFs at this time; the best workaround I can find is to use html output. The main drawback is figures in tikz need to be compiled separately."
+  },
+  {
+    "objectID": "ms-word.html",
+    "href": "ms-word.html",
+    "title": "9  Notes on Microsoft Word",
+    "section": "",
+    "text": "Here’s a government website for Word Documents: https://www.section508.gov/create/documents/"
   }
 ]
