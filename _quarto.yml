@@ -21,6 +21,7 @@ book:
         - markdown.qmd
         - quarto.qmd
         - ms-word.qmd
+        - html.qmd
 
 format:
   html:
