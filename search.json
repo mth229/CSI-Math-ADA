@@ -14,6 +14,13 @@
     "text": "1.1 The technology stack\nMath classes at CSI use several different technology stacks. For online homework we use all of WebAssign, Achieve, and WeBWorK.\nTo generate course materials, many instructors use LaTeX to create pdf, many use a markdown variant and Quarto to generate pdf and HTML pages, others use Microsoft Word, and still others have their own solutions.\nThese pages contain working notes on each of these."
   },
   {
+    "objectID": "index.html#the-main-issues-with-publishing-accessible-mathematics",
+    "href": "index.html#the-main-issues-with-publishing-accessible-mathematics",
+    "title": "ADA compliance notes",
+    "section": "1.2 The main issues with publishing accessible mathematics",
+    "text": "1.2 The main issues with publishing accessible mathematics\n\n1.2.1 Accessible PDF\n\n\n1.2.2 Equations\n\n\n1.2.3 Tables\n\n\n1.2.4 Figures"
+  },
+  {
     "objectID": "ada-tools.html",
     "href": "ada-tools.html",
     "title": "2  Tools to check for ADA compliance",
@@ -28,10 +35,24 @@
     "text": "WeBWorK is a system, sponsored by the Mathematical Association of America, using in the department of mathematics for online homework and quizzes.\n\n\nthere is a webwork frontend called “edfinity” that touts their ADA compliance: https://edfinity.com/vpat"
   },
   {
-    "objectID": "Achieve.html",
-    "href": "Achieve.html",
+    "objectID": "achieve.html",
+    "href": "achieve.html",
     "title": "5  Notes on Achieve",
     "section": "",
     "text": "Achieve is a course supplement available with MacMillan adoptions.\nhttps://www.macmillanlearning.com/college/us/our-story/accessibility"
+  },
+  {
+    "objectID": "latex.html",
+    "href": "latex.html",
+    "title": "6  Notes on LaTeX",
+    "section": "",
+    "text": "Three links of interest (re: accessible LaTeX):\nhttps://libguides.lib.msu.edu/c.php?g=995742&p=8207771\nhttps://www.ams.org/journals/notices/202301/rnoti-p68.pdf\nhttps://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files"
+  },
+  {
+    "objectID": "quarto.html",
+    "href": "quarto.html",
+    "title": "8  Notes on Quarto",
+    "section": "",
+    "text": "Quarto is an open-source scientific and technical publishing system which can be used to publish in HTML, PDF, and other formats. A key feature is easy integration with programming languages like Julia, R, and Python.\n\nOne issue I’m running into now is Quarto isn’t able to produce tagged PDF/A documents. At least not with what I tried which is just\n(it doesn’t understand how Quarto’s tables are produced and isn’t able to compile).\nQuarto is built on Pandoc which then uses pdflatex so the accessibility information needs to be passed through multiple levels. Pandoc has more info at 1 and 2. The suggestion with Pandoc is to use ConTeXt instead of LaTeX since ConTeXt always produces tagged documents, although Pandoc requires an extension in order to optimize for tagging.\nSummary: Quarto is not suitable for producing tagged PDFs at this time; the best workaround I can find is to use html output. The main drawback is figures in tikz need to be compiled separately."
   }
 ]
