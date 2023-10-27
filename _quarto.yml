@@ -16,7 +16,7 @@ book:
         - ada-tools.qmd
         - webwork.qmd
         - webassign.qmd
-        - Achieve.qmd
+        - achieve.qmd
         - latex.qmd
         - markdown.qmd
         - quarto.qmd

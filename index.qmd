@@ -20,3 +20,14 @@ Math classes at CSI use several different technology stacks. For online homework
 To generate course materials, many instructors use LaTeX to create pdf, many use a markdown variant and Quarto to generate pdf and HTML pages, others use Microsoft Word, and still others have their own solutions.
 
 These pages contain working notes on each of these.
+
+
+## The main issues with publishing accessible mathematics
+
+### Accessible PDF
+
+### Equations
+
+### Tables
+
+### Figures
