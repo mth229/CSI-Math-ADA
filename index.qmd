@@ -9,9 +9,9 @@ Part of the settlement included:
 
 * The prompt availability of accessible course materials by the start of the relevant course or as soon as practicable based upon early consultations with affected students;
 
-* nformation Technology accessibility consistent with the latest Web Content Accessibility Guidelines, including via verification of the accessibility of third-party learning products and of instructors’ awareness of accessibility requirements for instructor-created content;
+* Information Technology accessibility consistent with the latest Web Content Accessibility Guidelines, including via verification of the accessibility of third-party learning products and of instructors’ awareness of accessibility requirements for instructor-created content;
 
-This page attempts to make aware the  accessibility requirements for instructor-created content, as commonly done in a mathematics class.
+These pages attempt to make aware the  accessibility requirements for instructor-created content, as commonly done in a mathematics class.
 
 ## The technology stack
 
@@ -24,10 +24,25 @@ These pages contain working notes on each of these.
 
 ## The main issues with publishing accessible mathematics
 
-### Accessible PDF
-
-### Equations
+Accessible mathematics herein is concerned with the ability of assistive technologies to read aloud a document so that it can be used without sight. Common areas which needs assistance are:
 
 ### Tables
 
+Data tables are used to organize data with a logical relationship in grids.
+
+Accessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. [https://www.w3.org/WAI/tutorials/tables/](https://www.w3.org/WAI/tutorials/tables/)
+
+
 ### Figures
+
+Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities. This tutorial demonstrates how to provide appropriate text alternatives based on the purpose of the image. [https://www.w3.org/WAI/tutorials/images/](https://www.w3.org/WAI/tutorials/images/)
+
+### Equations
+
+Equations may give screen readers difficulty.
+
+### Document structure
+
+All of HTML, PDF, and Word formats have the ability to structure a document.
+
+For example, HTML has header tags to provide a structure.
