@@ -11,17 +11,14 @@ book:
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
-    - part: "Technologies"
-      chapters:
-        - ada-tools.qmd
-        - webwork.qmd
-        - webassign.qmd
-        - achieve.qmd
-        - latex.qmd
-        - markdown.qmd
-        - quarto.qmd
-        - ms-word.qmd
-        - html.qmd
+    - ada-tools.qmd
+    - webwork.qmd
+    - webassign.qmd
+    - achieve.qmd
+    - latex.qmd
+    - markdown.qmd
+    - quarto.qmd
+    - ms-word.qmd
 
 format:
   html:

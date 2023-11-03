@@ -24,6 +24,9 @@ These pages contain working notes on each of these.
 
 ## The main issues with publishing accessible mathematics
 
+
+Accessible mathematics herein is concerned with the ability of assistive technologies to read aloud a document so that it can be used without sight. Common areas which needs assistance are:
+
 ### Accessible PDF
 
 > Because LaTeX was designed as a typesetting program, PDF documents created using LaTeX do not include the document structure and tagging required for accessibility by default. It is possible to create accessible PDF documents using LaTeX but users will need to use additional LaTeX packages and should be aware of accessibility standards. The Accessibilty package in LaTeX can be used to add the structure, tagging, and alt text that PDF's created with LaTeX lack. 
@@ -32,6 +35,7 @@ These pages contain working notes on each of these.
 
 ### Equations
 
+
 > To make mathematical formulae accessible in you LaTeX document, you will need to load in the axessibility package into the preamble.
 > 
 > \usepackage{axessibility}
@@ -39,9 +43,25 @@ These pages contain working notes on each of these.
 
 ### Tables
 
-Data tables are used to organize data with a logical relationship in grids. Accessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. [https://www.w3.org/WAI/tutorials/tables/](https://www.w3.org/WAI/tutorials/tables/)
+
+Data tables are used to organize data with a logical relationship in grids.
+
+Accessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. [https://www.w3.org/WAI/tutorials/tables/](https://www.w3.org/WAI/tutorials/tables/)
+
 
 
 ### Figures
 
 Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities. This tutorial demonstrates how to provide appropriate text alternatives based on the purpose of the image. [https://www.w3.org/WAI/tutorials/images/](https://www.w3.org/WAI/tutorials/images/)
+s
+
+### Equations
+
+Equations may give screen readers difficulty.
+
+### Document structure
+
+All of HTML, PDF, and Word formats have the ability to structure a document.
+
+For example, HTML has header tags to provide a structure.
+
