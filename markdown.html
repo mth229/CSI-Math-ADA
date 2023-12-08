@@ -200,14 +200,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto"><span class="header-section-number">7.1</span> Quarto</a>
+  <li><a href="#pandoc" id="toc-pandoc" class="nav-link active" data-scroll-target="#pandoc"><span class="header-section-number">7.1</span> Pandoc</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">7.2</span> Quarto</a>
   <ul class="collapse">
-  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">7.1.1</span> Figures</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">7.2.1</span> Figures</a></li>
   </ul></li>
-  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="header-section-number">7.2</span> Tables</a>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="header-section-number">7.3</span> Tables</a>
   <ul class="collapse">
-  <li><a href="#equations" id="toc-equations" class="nav-link" data-scroll-target="#equations"><span class="header-section-number">7.2.1</span> Equations</a></li>
-  <li><a href="#embedded-code" id="toc-embedded-code" class="nav-link" data-scroll-target="#embedded-code"><span class="header-section-number">7.2.2</span> Embedded code</a></li>
+  <li><a href="#equations" id="toc-equations" class="nav-link" data-scroll-target="#equations"><span class="header-section-number">7.3.1</span> Equations</a></li>
+  <li><a href="#embedded-code" id="toc-embedded-code" class="nav-link" data-scroll-target="#embedded-code"><span class="header-section-number">7.3.2</span> Embedded code</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mth229/CSI-Math-ADA/edit/main/markdown.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mth229/CSI-Math-ADA/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -234,12 +235,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Markdown is a lightweight markup language for creating formatted text using a plain-text editor. (<a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>)</p>
 <p>Markdown is standardized by <a href="https://en.wikipedia.org/wiki/Markdown#Standardization">CommonMark</a> but there are many variants.</p>
-<section id="quarto" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="quarto"><span class="header-section-number">7.1</span> Quarto</h2>
+<p>There are several means to convert markdown to other formats. A widely used one is <code>pandoc</code>. A newer, but very common one is Quarto, a successor to R’s <code>knitr</code> package for reproducible science that mixex text and code.</p>
+<section id="pandoc" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="pandoc"><span class="header-section-number">7.1</span> Pandoc</h2>
+<p>Pandoc can be found on <a href="https://pandoc.org/">pandoc.org</a>. Pandoc claims: “If you need to convert files from one markup format into another, pandoc is your swiss-army knife.”</p>
+<p>Pandoc can easily convert markdown formatted files to pdf or html.</p>
+<p>For ADA compliant pdf, the <a href="https://joss.theoj.org/">Journal of Open Source Software</a> uses markdown for paper submissions (with minor adjustments for references) and converts to pdf using <a href="https://wiki.contextgarden.net/Main_Page">ConTeXt</a>, saying</p>
+<blockquote class="blockquote">
+<p>A common method for PDF generation is to go via LaTeX. However, support for tagging – a requirement for accessible PDFs – is not readily available for LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3</p>
+</blockquote>
+<p>The basic command for converting <code>test.md</code> to <code>test.pdf</code> would look like:</p>
+<pre><code>pandoc test.md -o test.pdf -t context</code></pre>
+</section>
+<section id="quarto" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="quarto"><span class="header-section-number">7.2</span> Quarto</h2>
 <p>One variant is the Markdown supported in <a href="https://quarto.org">Quarto</a>, which is well described on its webpages. Quarto uses pandoc to handle conversions and can output to the three main formats discussed here: PDF, HTML, and MS Word.</p>
 <p>We copy a few pieces of the documentation below:</p>
-<section id="figures" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="figures"><span class="header-section-number">7.1.1</span> Figures</h3>
+<section id="figures" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="figures"><span class="header-section-number">7.2.1</span> Figures</h3>
 <p><a href="https://quarto.org/docs/authoring/figures.html">Figures</a> are created with the syntax:</p>
 <pre class="verbatim"><code>![caption](elephant.png){fig-alt="A drawing of an elephant."}</code></pre>
 <p>Which contains the image a caption and an alt tag for screen readers. Many other options are also available for sizing and alignment.</p>
@@ -252,19 +265,19 @@ Main caption
 :::</code></pre>
 </section>
 </section>
-<section id="tables" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="tables"><span class="header-section-number">7.2</span> Tables</h2>
+<section id="tables" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="tables"><span class="header-section-number">7.3</span> Tables</h2>
 <p><a href="https://quarto.org/docs/authoring/tables.html">Tables</a> can be created in a fairly simple manner with “pipe tables”. The example from the documentation:</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>| Default | Left | Right | Center |</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>|---------|:-----|------:|:------:|</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>| 12      | 12   |    12 |   12   |</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>| 123     | 123  |   123 |  123   |</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>| 1       | 1    |     1 |   1    |</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>: Demonstration of pipe table syntax</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>| Default | Left | Right | Center |</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>|---------|:-----|------:|:------:|</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>| 12      | 12   |    12 |   12   |</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>| 123     | 123  |   123 |  123   |</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>| 1       | 1    |     1 |   1    |</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>: Demonstration of pipe table syntax</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table">
@@ -302,13 +315,13 @@ Main caption
 </div>
 </div>
 <p>Tables may also be generated programattically.</p>
-<section id="equations" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="equations"><span class="header-section-number">7.2.1</span> Equations</h3>
+<section id="equations" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="equations"><span class="header-section-number">7.3.1</span> Equations</h3>
 <p>Quarto provides support for <a href="https://quarto.org/docs/visual-editor/technical.html">Technical writing</a> including equations, citations, cross-references, footnotes, embedded code, and LateX.</p>
 <p>LaTeX equations are authored using standard Pandoc markdown syntax, which uses matching dollar signs (one or two) to indicate inline and display math.</p>
 </section>
-<section id="embedded-code" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="embedded-code"><span class="header-section-number">7.2.2</span> Embedded code</h3>
+<section id="embedded-code" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="embedded-code"><span class="header-section-number">7.3.2</span> Embedded code</h3>
 <p>Quarto makes the mix of executable computer code with text quite effortless, allowing for reproducible, dynamic documents.</p>
 <p>The embedded code can have labels, captions, alt tags, etc.</p>
 <p>Embedded code can also have <a href="https://quarto.org/docs/authoring/code-annotation.html">annotations</a>.</p>

@@ -70,18 +70,25 @@
     "text": "6.2 Further reading\nSome links of interest (re: accessible LaTeX):\n\nhttps://www.ams.org/journals/notices/202301/rnoti-p68.pdf\nhttps://libguides.lib.msu.edu/c.php?g=995742&p=8207771\nhttps://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files\nPDF-A Compliant LaTeX"
   },
   {
+    "objectID": "markdown.html#pandoc",
+    "href": "markdown.html#pandoc",
+    "title": "7  Notes on Markdown",
+    "section": "7.1 Pandoc",
+    "text": "7.1 Pandoc\nPandoc can be found on pandoc.org. Pandoc claims: “If you need to convert files from one markup format into another, pandoc is your swiss-army knife.”\nPandoc can easily convert markdown formatted files to pdf or html.\nFor ADA compliant pdf, the Journal of Open Source Software uses markdown for paper submissions (with minor adjustments for references) and converts to pdf using ConTeXt, saying\n\nA common method for PDF generation is to go via LaTeX. However, support for tagging – a requirement for accessible PDFs – is not readily available for LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3\n\nThe basic command for converting test.md to test.pdf would look like:\npandoc test.md -o test.pdf -t context"
+  },
+  {
     "objectID": "markdown.html#quarto",
     "href": "markdown.html#quarto",
     "title": "7  Notes on Markdown",
-    "section": "7.1 Quarto",
-    "text": "7.1 Quarto\nOne variant is the Markdown supported in Quarto, which is well described on its webpages. Quarto uses pandoc to handle conversions and can output to the three main formats discussed here: PDF, HTML, and MS Word.\nWe copy a few pieces of the documentation below:\n\n7.1.1 Figures\nFigures are created with the syntax:\n![caption](elephant.png){fig-alt=\"A drawing of an elephant.\"}\nWhich contains the image a caption and an alt tag for screen readers. Many other options are also available for sizing and alignment.\nAn alternate syntax that can be used to wrap, say, generated figures is to use the div-block constructs:\n::: {#fig-label layout-ncol=2}\n\n... figure code, e.g. ![sub-caption](link){fig-alt=\"alt tab\"} ...\n\nMain caption\n:::"
+    "section": "7.2 Quarto",
+    "text": "7.2 Quarto\nOne variant is the Markdown supported in Quarto, which is well described on its webpages. Quarto uses pandoc to handle conversions and can output to the three main formats discussed here: PDF, HTML, and MS Word.\nWe copy a few pieces of the documentation below:\n\n7.2.1 Figures\nFigures are created with the syntax:\n![caption](elephant.png){fig-alt=\"A drawing of an elephant.\"}\nWhich contains the image a caption and an alt tag for screen readers. Many other options are also available for sizing and alignment.\nAn alternate syntax that can be used to wrap, say, generated figures is to use the div-block constructs:\n::: {#fig-label layout-ncol=2}\n\n... figure code, e.g. ![sub-caption](link){fig-alt=\"alt tab\"} ...\n\nMain caption\n:::"
   },
   {
     "objectID": "markdown.html#tables",
     "href": "markdown.html#tables",
     "title": "7  Notes on Markdown",
-    "section": "7.2 Tables",
-    "text": "7.2 Tables\nTables can be created in a fairly simple manner with “pipe tables”. The example from the documentation:\n\n\n\n| Default | Left | Right | Center |\n|---------|:-----|------:|:------:|\n| 12      | 12   |    12 |   12   |\n| 123     | 123  |   123 |  123   |\n| 1       | 1    |     1 |   1    |\n\n: Demonstration of pipe table syntax\n\n\n\nDemonstration of pipe table syntax\n\n\nDefault\nLeft\nRight\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\nTables may also be generated programattically.\n\n7.2.1 Equations\nQuarto provides support for Technical writing including equations, citations, cross-references, footnotes, embedded code, and LateX.\nLaTeX equations are authored using standard Pandoc markdown syntax, which uses matching dollar signs (one or two) to indicate inline and display math.\n\n\n7.2.2 Embedded code\nQuarto makes the mix of executable computer code with text quite effortless, allowing for reproducible, dynamic documents.\nThe embedded code can have labels, captions, alt tags, etc.\nEmbedded code can also have annotations."
+    "section": "7.3 Tables",
+    "text": "7.3 Tables\nTables can be created in a fairly simple manner with “pipe tables”. The example from the documentation:\n\n\n\n| Default | Left | Right | Center |\n|---------|:-----|------:|:------:|\n| 12      | 12   |    12 |   12   |\n| 123     | 123  |   123 |  123   |\n| 1       | 1    |     1 |   1    |\n\n: Demonstration of pipe table syntax\n\n\n\nDemonstration of pipe table syntax\n\n\nDefault\nLeft\nRight\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\nTables may also be generated programattically.\n\n7.3.1 Equations\nQuarto provides support for Technical writing including equations, citations, cross-references, footnotes, embedded code, and LateX.\nLaTeX equations are authored using standard Pandoc markdown syntax, which uses matching dollar signs (one or two) to indicate inline and display math.\n\n\n7.3.2 Embedded code\nQuarto makes the mix of executable computer code with text quite effortless, allowing for reproducible, dynamic documents.\nThe embedded code can have labels, captions, alt tags, etc.\nEmbedded code can also have annotations."
   },
   {
     "objectID": "quarto.html#quarto-can-use-different-tools",
