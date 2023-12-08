@@ -4,6 +4,27 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 
 Markdown is standardized by [CommonMark](https://en.wikipedia.org/wiki/Markdown#Standardization) but there are many variants.
 
+
+There are several means to convert markdown to other formats. A widely used one is `pandoc`. A newer, but very common one is Quarto, a successor to R's `knitr` package for reproducible science that  mixex text and code.
+
+
+## Pandoc
+
+Pandoc can be found on [pandoc.org](https://pandoc.org/). Pandoc claims: "If you need to convert files from one markup format into another, pandoc is your swiss-army knife."
+
+Pandoc can easily convert markdown formatted files to pdf or html.
+
+For ADA compliant pdf, the [Journal of Open Source Software](https://joss.theoj.org/) uses markdown for paper submissions (with minor adjustments for references) and converts to pdf using [ConTeXt](https://wiki.contextgarden.net/Main_Page), saying
+
+> A common method for PDF generation is to go via LaTeX. However, support for tagging – a requirement for accessible PDFs – is not readily available for LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3
+
+The basic command for converting `test.md` to `test.pdf` would look like:
+
+```
+pandoc test.md -o test.pdf -t context
+```
+
+
 ## Quarto
 
 One variant is the Markdown supported in [Quarto](https://quarto.org), which is well described on its webpages. Quarto uses pandoc to handle conversions and can output to the three main formats discussed here: PDF, HTML, and MS Word.
