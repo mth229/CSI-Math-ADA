@@ -1,6 +1,10 @@
 # Tools to check for ADA compliance
 
 
+The main tool for checking for ADA compliance provided by CUNY is Ally. This is a product of Anthology Inc which is purchased for use within the CUNY LMS (BlackBoard or Brightspace/D2L). This is available through *at least* Dec. 30, 2028.
+
+The following provides some details on it use: [All use](https://pressbooks.cuny.edu/accessibilitytoolkit/chapter/anthology-ally-accessibility-support/).
+
 
 ## PDF
 
