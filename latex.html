@@ -195,6 +195,26 @@ ul.task-list li input[type="checkbox"] {
 <p>Because LaTeX was designed as a typesetting program, PDF documents created using LaTeX do not include the document structure and tagging required for accessibility by default. It is possible to create accessible PDF documents using LaTeX but users will need to use additional LaTeX packages and should be aware of accessibility standards. The Accessibilty package in LaTeX can be used to add the structure, tagging, and alt text that PDF’s created with LaTeX lack.</p>
 <p>From <a href="https://libguides.lib.msu.edu/c.php?g=995742&amp;p=8207771">LaTeX Guides</a></p>
 </blockquote>
+<p>The support of tagged PDF within is ongoing. It appears that as of June 2023, the most upto date instructions would be:</p>
+<ol type="1">
+<li><p>is run with the testphase=phase-III and testphase=math extensions</p></li>
+<li><p>Only base packages (<code>article</code>, <code>report</code>, <code>book</code>) are supported (not <code>amsart</code>?)</p></li>
+<li><p><code>LuaTeX</code> is used as the front end rather than <code>pdflatex</code></p></li>
+</ol>
+<p>It seems like the <code>tagpdf</code> package (mentioned below) is no longer needed for this to work.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Untested
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The above recipe is untested. Confirmation of it working would be welcome.</p>
+</div>
+</div>
 <section id="packages" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="packages"><span class="header-section-number">6.1</span> Packages</h2>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -203,11 +223,11 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Do any of these work?
+These may all be outdated
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>XXX We need a working example here along with guidance on what version of LaTeX is needed. JV couldn’t get any of the below to actually work</p>
+
 </div>
 </div>
 <ul>
