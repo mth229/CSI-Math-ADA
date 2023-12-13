@@ -4,15 +4,34 @@
 >
 > From [LaTeX Guides](https://libguides.lib.msu.edu/c.php?g=995742&p=8207771)
 
+The support of tagged PDF within \LaTeX is ongoing. It appears that as of June 2023, the most upto date instructions would be:
+
+1. \LaTeX is run with the testphase=phase-III and testphase=math extensions
+
+2. Only base packages (`article`, `report`, `book`) are supported (not `amsart`?)
+
+3. `LuaTeX` is used as the front end rather than `pdflatex`
+
+It seems like the `tagpdf` package (mentioned below) is no longer needed for this to work.
+
+::: {.callout-note}
+## Untested
+
+The above recipe is untested. Confirmation of it working would be welcome.
+
+:::
+
+
+
 ## Packages
 
 ::: {.callout-note}
-## Do any of these work?
+## These may all be outdated
 
-XXX We need a working example here along with guidance on what version of LaTeX is needed. JV couldn't get any of the below to actually work
 :::
 
 * [tagpdf](https://ctan.org/pkg/tagpdf?lang=en)
+
 
 The package offers tools to experiment with tagging and accessibility using pdfLATEX and LuaTEX. It isn’t meant for production but allows the user to try out how difficult it is to tag some structures; to try out how much tagging is really needed; to test what else is needed so that a pdf works e.g. with a screen reader. Its goal is to get a feeling for what has to be done, which kernel changes are needed, how packages should be adapted.
 
