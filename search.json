@@ -104,7 +104,7 @@
     "href": "latex.html#packages",
     "title": "6  Notes on LaTeX",
     "section": "",
-    "text": "These may all be outdated\n\n\n\n\n\n\n\ntagpdf\n\n\n\n\n\n\n\n\nWait!\n\n\n\nThis package is not actively developed. Please read the author’s README for more info.\n\n\n\naccessibility\n\n\n\n\n\n\n\n\nWait!\n\n\n\nAs of 2020 the author discourages the use of this package.\n\n\n\naxessiblity",
+    "text": "These may all be outdated\n\n\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis package is not meant for direct use for end users.\n\n\n\ntagpdf\n\n\n\n\n\n\n\n\nWait!\n\n\n\nThis package is not actively developed. Please read the author’s README for more info.\n\n\n\naccessibility\n\n\n\n\n\n\n\n\nWait!\n\n\n\nAs of 2020 the author discourages the use of this package.\n\n\n\naxessiblity",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Notes on LaTeX</span>"
     ]
