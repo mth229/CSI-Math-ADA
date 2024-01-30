@@ -4,104 +4,189 @@
     "href": "index.html",
     "title": "ADA compliance notes",
     "section": "",
-    "text": "1 ADA and the Math Department\nThe Department of Mathematics takes seriously compliance with the requirements of the ADA.\nIn spring of 2023, CUNY entered into an voluntary agreement with the Southern District of New York. This was in response to a student complaint in 2011 that WebAssign was not accessible given their needs. (“That digital platform was not fully capable of reading out mathematical and scientific symbols and equations.”)\nPart of the settlement included:\nThese pages attempt to make aware the accessibility requirements for instructor-created content, as commonly done in a mathematics class."
+    "text": "1 ADA and the Math Department\nThe Department of Mathematics takes seriously compliance with the requirements of the ADA.\nIn spring of 2023, CUNY entered into an voluntary agreement with the Southern District of New York. This was in response to a student complaint in 2011 that WebAssign was not accessible given their needs. (“That digital platform was not fully capable of reading out mathematical and scientific symbols and equations.”)\nPart of the settlement included:\nThese pages attempt to make aware the accessibility requirements for instructor-created content, as commonly done in a mathematics class.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>ADA and the Math Department</span>"
+    ]
   },
   {
     "objectID": "index.html#the-technology-stack",
     "href": "index.html#the-technology-stack",
     "title": "ADA compliance notes",
     "section": "1.1 The technology stack",
-    "text": "1.1 The technology stack\nMath classes at CSI use several different technology stacks. For online homework we use all of WebAssign, Achieve, and WeBWorK.\nTo generate course materials, many instructors use LaTeX to create pdf, many use a markdown variant and Quarto to generate pdf and HTML pages, others use Microsoft Word, and still others have their own solutions.\nThese pages contain working notes on each of these."
+    "text": "1.1 The technology stack\nMath classes at CSI use several different technology stacks. For online homework we use all of WebAssign, Achieve, and WeBWorK.\nTo generate course materials, many instructors use LaTeX to create pdf, many use a markdown variant and Quarto to generate pdf and HTML pages, others use Microsoft Word, and still others have their own solutions.\nThese pages contain working notes on each of these.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>ADA and the Math Department</span>"
+    ]
   },
   {
     "objectID": "index.html#the-main-issues-with-publishing-accessible-mathematics",
     "href": "index.html#the-main-issues-with-publishing-accessible-mathematics",
     "title": "ADA compliance notes",
     "section": "1.2 The main issues with publishing accessible mathematics",
-    "text": "1.2 The main issues with publishing accessible mathematics\nAccessible mathematics herein is concerned with the ability of assistive technologies to read aloud a document so that it can be used without sight. Common areas which needs assistance are:\n\n1.2.1 Accessible PDF\n\nBecause LaTeX was designed as a typesetting program, PDF documents created using LaTeX do not include the document structure and tagging required for accessibility by default. It is possible to create accessible PDF documents using LaTeX but users will need to use additional LaTeX packages and should be aware of accessibility standards. The Accessibilty package in LaTeX can be used to add the structure, tagging, and alt text that PDF’s created with LaTeX lack.\nFrom LaTeX Guides\n\n\n\n1.2.2 Equations\n\nTo make mathematical formulae accessible in you LaTeX document, you will need to load in the axessibility package into the preamble.\n\n\n\n1.2.3 Tables\nData tables are used to organize data with a logical relationship in grids.\nAccessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. https://www.w3.org/WAI/tutorials/tables/\n\n\n1.2.4 Figures\nImages must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities. This tutorial demonstrates how to provide appropriate text alternatives based on the purpose of the image. https://www.w3.org/WAI/tutorials/images/ s\n\n\n1.2.5 Equations\nEquations may give screen readers difficulty.\n\n\n1.2.6 Document structure\nAll of HTML, PDF, and Word formats have the ability to structure a document.\nFor example, HTML has header tags to provide a structure."
+    "text": "1.2 The main issues with publishing accessible mathematics\nAccessible mathematics herein is concerned with the ability of assistive technologies to read aloud a document so that it can be used without sight. Common areas which needs assistance are:\n\n1.2.1 Accessible PDF\n\nBecause LaTeX was designed as a typesetting program, PDF documents created using LaTeX do not include the document structure and tagging required for accessibility by default. It is possible to create accessible PDF documents using LaTeX but users will need to use additional LaTeX packages and should be aware of accessibility standards. The Accessibilty package in LaTeX can be used to add the structure, tagging, and alt text that PDF’s created with LaTeX lack.\nFrom LaTeX Guides\n\n\n\n1.2.2 Equations\n\nTo make mathematical formulae accessible in you LaTeX document, you will need to load in the axessibility package into the preamble.\n\n\n\n1.2.3 Tables\nData tables are used to organize data with a logical relationship in grids.\nAccessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. https://www.w3.org/WAI/tutorials/tables/\n\n\n1.2.4 Figures\nImages must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities. This tutorial demonstrates how to provide appropriate text alternatives based on the purpose of the image. https://www.w3.org/WAI/tutorials/images/ s\n\n\n1.2.5 Equations\nEquations may give screen readers difficulty.\n\n\n1.2.6 Document structure\nAll of HTML, PDF, and Word formats have the ability to structure a document.\nFor example, HTML has header tags to provide a structure.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>ADA and the Math Department</span>"
+    ]
+  },
+  {
+    "objectID": "ada-tools.html",
+    "href": "ada-tools.html",
+    "title": "2  Tools to check for ADA compliance",
+    "section": "",
+    "text": "2.1 PDF\nAdobe says:\nAn accessible PDF is a document that is universally easy to use and meets established accessibility standards. It enables most people to view, read, or interact with your document. Since your audience may include people whose vision, hearing, mobility, or cognition is impaired, your document must support assistive technology like:\nThe more accessible your PDF is, for example, the easier it is to hear on a mobile device. Or view it with a screen magnifier. Or fill it out without a keyboard. Actually, this increased ease of use benefits everyone in your audience, regardless of their various abilities.\nAccessible PDFs, as opposed to regular PDFs, prioritize inclusivity and provide a better user experience for individuals with disabilities. Here are the key differences:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Tools to check for ADA compliance</span>"
+    ]
   },
   {
     "objectID": "ada-tools.html#pdf",
     "href": "ada-tools.html#pdf",
     "title": "2  Tools to check for ADA compliance",
-    "section": "2.1 PDF",
-    "text": "2.1 PDF\nAdobe says:\nAn accessible PDF is a document that is universally easy to use and meets established accessibility standards. It enables most people to view, read, or interact with your document. Since your audience may include people whose vision, hearing, mobility, or cognition is impaired, your document must support assistive technology like:\n\nScreen readers\nText-to-speech programs\nBraille displays\nAnd more\n\nThe more accessible your PDF is, for example, the easier it is to hear on a mobile device. Or view it with a screen magnifier. Or fill it out without a keyboard. Actually, this increased ease of use benefits everyone in your audience, regardless of their various abilities.\nAccessible PDFs, as opposed to regular PDFs, prioritize inclusivity and provide a better user experience for individuals with disabilities. Here are the key differences:\n\nStructure. Accessible PDFs have a proper organization with headings, paragraphs, and tables, aiding screen readers in understanding the content flow. Regular PDFs lack this structure.\nTextual accessibility. Accessible PDFs ensure the text is accessible using techniques like text recognition and alternative text for images. Regular PDFs may consist of static images or scanned documents.\nNavigation. Accessible PDFs include bookmarks, a table of contents, and descriptive hyperlinks for easy navigation. Regular PDFs can be challenging to navigate with screen readers.\nColor and contrast. Accessible PDFs prioritize color contrast and provide alternatives for color-coded information. Regular PDFs may have low contrast or rely solely on color.\nForms and interactive elements. Accessible PDFs have properly labeled and accessible form fields and interactive elements. Regular PDFs often lack proper labeling.\nMetadata and language specification. Accessible PDFs include accurate metadata and specify the document’s language. Regular PDFs may lack metadata or language specification.\n\n\n2.1.1 Adobe products\nFaculty have access to the Adobe Suite of packages called Adobe Creative Cloud. (Students in certain courses do, as well.)\nThe Acrobat Pro program has a tool to verify accessibility https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html.\nThe tool creates a report on a given pdf.\n\n\n2.1.2 verapdf\nAt https://openpreservation.org/tools, noe can find the verapdf program, an “an industry supported PDF/A validator.”\nFor https://en.wikipedia.org/wiki/PDF/A:\nPDF/A is an ISO-standardized version of the Portable Document Format (PDF) specialized for use in the archiving and long-term preservation of electronic documents. PDF/A differs from PDF by prohibiting features unsuitable for long-term archiving, such as font linking (as opposed to font embedding) and encryption.[1] The ISO requirements for PDF/A file viewers include color management guidelines, support for embedded fonts, and a user interface for reading embedded annotations."
+    "section": "",
+    "text": "Screen readers\nText-to-speech programs\nBraille displays\nAnd more\n\n\n\n\nStructure. Accessible PDFs have a proper organization with headings, paragraphs, and tables, aiding screen readers in understanding the content flow. Regular PDFs lack this structure.\nTextual accessibility. Accessible PDFs ensure the text is accessible using techniques like text recognition and alternative text for images. Regular PDFs may consist of static images or scanned documents.\nNavigation. Accessible PDFs include bookmarks, a table of contents, and descriptive hyperlinks for easy navigation. Regular PDFs can be challenging to navigate with screen readers.\nColor and contrast. Accessible PDFs prioritize color contrast and provide alternatives for color-coded information. Regular PDFs may have low contrast or rely solely on color.\nForms and interactive elements. Accessible PDFs have properly labeled and accessible form fields and interactive elements. Regular PDFs often lack proper labeling.\nMetadata and language specification. Accessible PDFs include accurate metadata and specify the document’s language. Regular PDFs may lack metadata or language specification.\n\n\n2.1.1 Adobe products\nFaculty have access to the Adobe Suite of packages called Adobe Creative Cloud. (Students in certain courses do, as well.)\nThe Acrobat Pro program has a tool to verify accessibility https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html.\nThe tool creates a report on a given pdf.\n\n\n2.1.2 verapdf\nAt https://openpreservation.org/tools, noe can find the verapdf program, an “an industry supported PDF/A validator.”\nFor https://en.wikipedia.org/wiki/PDF/A:\nPDF/A is an ISO-standardized version of the Portable Document Format (PDF) specialized for use in the archiving and long-term preservation of electronic documents. PDF/A differs from PDF by prohibiting features unsuitable for long-term archiving, such as font linking (as opposed to font embedding) and encryption.[1] The ISO requirements for PDF/A file viewers include color management guidelines, support for embedded fonts, and a user interface for reading embedded annotations.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Tools to check for ADA compliance</span>"
+    ]
   },
   {
     "objectID": "ada-tools.html#html",
     "href": "ada-tools.html#html",
     "title": "2  Tools to check for ADA compliance",
     "section": "2.2 HTML",
-    "text": "2.2 HTML\n\nhttps://www.w3.org/WAI/standards-guidelines/wcag/\n\nWCAG are guidelines, internationally accepted, describing how to make web content more accessible to people with disabilities.\n\nhttps://wave.webaim.org/ WAVE provides a plugin for a browser making it easy and informative to check for Web Content Accessibility Guideline (WCAG) errors."
+    "text": "2.2 HTML\n\nhttps://www.w3.org/WAI/standards-guidelines/wcag/\n\nWCAG are guidelines, internationally accepted, describing how to make web content more accessible to people with disabilities.\n\nhttps://wave.webaim.org/ WAVE provides a plugin for a browser making it easy and informative to check for Web Content Accessibility Guideline (WCAG) errors.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Tools to check for ADA compliance</span>"
+    ]
   },
   {
     "objectID": "ada-tools.html#ms-word",
     "href": "ada-tools.html#ms-word",
     "title": "2  Tools to check for ADA compliance",
     "section": "2.3 MS Word",
-    "text": "2.3 MS Word"
+    "text": "2.3 MS Word",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Tools to check for ADA compliance</span>"
+    ]
   },
   {
     "objectID": "webwork.html",
     "href": "webwork.html",
     "title": "3  Notes on WeBWork",
     "section": "",
-    "text": "WeBWorK is a system, sponsored by the Mathematical Association of America, using in the department of mathematics for online homework and quizzes.\n\n\nthere is a webwork frontend called “edfinity” that touts their ADA compliance: https://edfinity.com/vpat"
+    "text": "WeBWorK is a system, sponsored by the Mathematical Association of America, using in the department of mathematics for online homework and quizzes.\n\n\nthere is a webwork frontend called “edfinity” that touts their ADA compliance: https://edfinity.com/vpat",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Notes on WeBWork</span>"
+    ]
   },
   {
     "objectID": "achieve.html",
     "href": "achieve.html",
     "title": "5  Notes on Achieve",
     "section": "",
-    "text": "Achieve is a course supplement available with MacMillan adoptions.\nhttps://www.macmillanlearning.com/college/us/our-story/accessibility"
+    "text": "Achieve is a course supplement available with MacMillan adoptions.\nhttps://www.macmillanlearning.com/college/us/our-story/accessibility",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Notes on Achieve</span>"
+    ]
+  },
+  {
+    "objectID": "latex.html",
+    "href": "latex.html",
+    "title": "6  Notes on LaTeX",
+    "section": "",
+    "text": "6.1 Packages\nThe package offers tools to experiment with tagging and accessibility using pdfLATEX and LuaTEX. It isn’t meant for production but allows the user to try out how difficult it is to tag some structures; to try out how much tagging is really needed; to test what else is needed so that a pdf works e.g. with a screen reader. Its goal is to get a feeling for what has to be done, which kernel changes are needed, how packages should be adapted.\nThe accessibility package is intended to create tagged, structured PDF documents from LATEX source code. It allows to produce tagged PDF output following Adobe’s PDF-1.5 and 1.6 specifications.\nPDF documents containing formulas generated by LATEX are usually not accessible by assistive technologies for visually impaired people and people with special educational needs (i.e., by screen readers and braille displays). The axessibility package manages this issue, allowing to create a PDF document where the formulas are read by these assistive technologies, since it automatically generates hidden comments in the PDF document (by means of the /ActualText attribute and/or suitable tags) in correspondence to each formula.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Notes on LaTeX</span>"
+    ]
   },
   {
     "objectID": "latex.html#packages",
     "href": "latex.html#packages",
     "title": "6  Notes on LaTeX",
-    "section": "6.1 Packages",
-    "text": "6.1 Packages\n\n\n\n\n\n\nThese may all be outdated\n\n\n\n\n\n\n\ntagpdf\n\nThe package offers tools to experiment with tagging and accessibility using pdfLATEX and LuaTEX. It isn’t meant for production but allows the user to try out how difficult it is to tag some structures; to try out how much tagging is really needed; to test what else is needed so that a pdf works e.g. with a screen reader. Its goal is to get a feeling for what has to be done, which kernel changes are needed, how packages should be adapted.\n\n\n\n\n\n\nActively developed\n\n\n\nThis package is actively developed\n\n\n\naccessibility\n\nThe accessibility package is intended to create tagged, structured PDF documents from LATEX source code. It allows to produce tagged PDF output following Adobe’s PDF-1.5 and 1.6 specifications.\n\n\n\n\n\n\nWait!\n\n\n\nAs of 2020 the author discourages the use of this package.\n\n\n\naxessiblity\n\nPDF documents containing formulas generated by LATEX are usually not accessible by assistive technologies for visually impaired people and people with special educational needs (i.e., by screen readers and braille displays). The axessibility package manages this issue, allowing to create a PDF document where the formulas are read by these assistive technologies, since it automatically generates hidden comments in the PDF document (by means of the /ActualText attribute and/or suitable tags) in correspondence to each formula."
+    "section": "",
+    "text": "These may all be outdated\n\n\n\n\n\n\n\ntagpdf\n\n\n\n\n\n\n\n\nWait!\n\n\n\nThis package is not actively developed. Please read the author’s README for more info.\n\n\n\naccessibility\n\n\n\n\n\n\n\n\nWait!\n\n\n\nAs of 2020 the author discourages the use of this package.\n\n\n\naxessiblity",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Notes on LaTeX</span>"
+    ]
   },
   {
     "objectID": "latex.html#further-reading",
     "href": "latex.html#further-reading",
     "title": "6  Notes on LaTeX",
     "section": "6.2 Further reading",
-    "text": "6.2 Further reading\nSome links of interest (re: accessible LaTeX):\n\nhttps://www.ams.org/journals/notices/202301/rnoti-p68.pdf\nhttps://libguides.lib.msu.edu/c.php?g=995742&p=8207771\nhttps://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files\nPDF-A Compliant LaTeX"
+    "text": "6.2 Further reading\nSome links of interest (re: accessible LaTeX):\n\nhttps://www.ams.org/journals/notices/202301/rnoti-p68.pdf\nhttps://libguides.lib.msu.edu/c.php?g=995742&p=8207771\nhttps://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files\nPDF-A Compliant LaTeX",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Notes on LaTeX</span>"
+    ]
+  },
+  {
+    "objectID": "markdown.html",
+    "href": "markdown.html",
+    "title": "7  Notes on Markdown",
+    "section": "",
+    "text": "7.1 Pandoc\nPandoc can be found on pandoc.org. Pandoc claims: “If you need to convert files from one markup format into another, pandoc is your swiss-army knife.”\nPandoc can easily convert markdown formatted files to pdf or html.\nFor ADA compliant pdf, the Journal of Open Source Software uses markdown for paper submissions (with minor adjustments for references) and converts to pdf using ConTeXt, saying\nThe basic command for converting test.md to test.pdf would look like:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Notes on Markdown</span>"
+    ]
   },
   {
     "objectID": "markdown.html#pandoc",
     "href": "markdown.html#pandoc",
     "title": "7  Notes on Markdown",
-    "section": "7.1 Pandoc",
-    "text": "7.1 Pandoc\nPandoc can be found on pandoc.org. Pandoc claims: “If you need to convert files from one markup format into another, pandoc is your swiss-army knife.”\nPandoc can easily convert markdown formatted files to pdf or html.\nFor ADA compliant pdf, the Journal of Open Source Software uses markdown for paper submissions (with minor adjustments for references) and converts to pdf using ConTeXt, saying\n\nA common method for PDF generation is to go via LaTeX. However, support for tagging – a requirement for accessible PDFs – is not readily available for LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3\n\nThe basic command for converting test.md to test.pdf would look like:\npandoc test.md -o test.pdf -t context"
+    "section": "",
+    "text": "A common method for PDF generation is to go via LaTeX. However, support for tagging – a requirement for accessible PDFs – is not readily available for LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3\n\n\npandoc test.md -o test.pdf -t context",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Notes on Markdown</span>"
+    ]
   },
   {
     "objectID": "markdown.html#quarto",
     "href": "markdown.html#quarto",
     "title": "7  Notes on Markdown",
     "section": "7.2 Quarto",
-    "text": "7.2 Quarto\nOne variant is the Markdown supported in Quarto, which is well described on its webpages. Quarto uses pandoc to handle conversions and can output to the three main formats discussed here: PDF, HTML, and MS Word.\nWe copy a few pieces of the documentation below:\n\n7.2.1 Figures\nFigures are created with the syntax:\n![caption](elephant.png){fig-alt=\"A drawing of an elephant.\"}\nWhich contains the image a caption and an alt tag for screen readers. Many other options are also available for sizing and alignment.\nAn alternate syntax that can be used to wrap, say, generated figures is to use the div-block constructs:\n::: {#fig-label layout-ncol=2}\n\n... figure code, e.g. ![sub-caption](link){fig-alt=\"alt tab\"} ...\n\nMain caption\n:::"
+    "text": "7.2 Quarto\nOne variant is the Markdown supported in Quarto, which is well described on its webpages. Quarto uses pandoc to handle conversions and can output to the three main formats discussed here: PDF, HTML, and MS Word.\nWe copy a few pieces of the documentation below:\n\n7.2.1 Figures\nFigures are created with the syntax:\n![caption](elephant.png){fig-alt=\"A drawing of an elephant.\"}\nWhich contains the image a caption and an alt tag for screen readers. Many other options are also available for sizing and alignment.\nAn alternate syntax that can be used to wrap, say, generated figures is to use the div-block constructs:\n::: {#fig-label layout-ncol=2}\n\n... figure code, e.g. ![sub-caption](link){fig-alt=\"alt tab\"} ...\n\nMain caption\n:::",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Notes on Markdown</span>"
+    ]
   },
   {
     "objectID": "markdown.html#tables",
     "href": "markdown.html#tables",
     "title": "7  Notes on Markdown",
     "section": "7.3 Tables",
-    "text": "7.3 Tables\nTables can be created in a fairly simple manner with “pipe tables”. The example from the documentation:\n\n\n\n| Default | Left | Right | Center |\n|---------|:-----|------:|:------:|\n| 12      | 12   |    12 |   12   |\n| 123     | 123  |   123 |  123   |\n| 1       | 1    |     1 |   1    |\n\n: Demonstration of pipe table syntax\n\n\n\nDemonstration of pipe table syntax\n\n\nDefault\nLeft\nRight\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\nTables may also be generated programattically.\n\n7.3.1 Equations\nQuarto provides support for Technical writing including equations, citations, cross-references, footnotes, embedded code, and LateX.\nLaTeX equations are authored using standard Pandoc markdown syntax, which uses matching dollar signs (one or two) to indicate inline and display math.\n\n\n7.3.2 Embedded code\nQuarto makes the mix of executable computer code with text quite effortless, allowing for reproducible, dynamic documents.\nThe embedded code can have labels, captions, alt tags, etc.\nEmbedded code can also have annotations."
+    "text": "7.3 Tables\nTables can be created in a fairly simple manner with “pipe tables”. The example from the documentation:\n\n\n\n\n\n\n| Default | Left | Right | Center |\n|---------|:-----|------:|:------:|\n| 12      | 12   |    12 |   12   |\n| 123     | 123  |   123 |  123   |\n| 1       | 1    |     1 |   1    |\n\n: Demonstration of pipe table syntax\n\n\n\nDemonstration of pipe table syntax\n\n\nDefault\nLeft\nRight\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\nTables may also be generated programattically.\n\n7.3.1 Equations\nQuarto provides support for Technical writing including equations, citations, cross-references, footnotes, embedded code, and LateX.\nLaTeX equations are authored using standard Pandoc markdown syntax, which uses matching dollar signs (one or two) to indicate inline and display math.\n\n\n7.3.2 Embedded code\nQuarto makes the mix of executable computer code with text quite effortless, allowing for reproducible, dynamic documents.\nThe embedded code can have labels, captions, alt tags, etc.\nEmbedded code can also have annotations.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Notes on Markdown</span>"
+    ]
+  },
+  {
+    "objectID": "quarto.html",
+    "href": "quarto.html",
+    "title": "8  Notes on Quarto",
+    "section": "",
+    "text": "8.1 Quarto can use different tools,\nIt appears that \\(\\LaTeX\\) will evolve to have more support for tagging of PDF documents. See tagpdf for some details.\nThe tinytex installation is very current. The name implies it is small, but how? It downloads packages on demand, so unlike other TeX installations, you need not have everything on your hard drive.\nTo install tinytex is easy\nAs an aside, there are quarto update tinytex and quarto uninstall tinytex commands.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Notes on Quarto</span>"
+    ]
   },
   {
     "objectID": "quarto.html#quarto-can-use-different-tools",
     "href": "quarto.html#quarto-can-use-different-tools",
     "title": "8  Notes on Quarto",
-    "section": "8.1 Quarto can use different tools,",
-    "text": "8.1 Quarto can use different tools,\nIt appears that \\(\\LaTeX\\) will evolve to have more support for tagging of PDF documents. See tagpdf for some details.\nThe tinytex installation is very current. The name implies it is small, but how? It downloads packages on demand, so unlike other TeX installations, you need not have everything on your hard drive.\nTo install tinytex is easy\n\nquarto install tinytex\n\nAs an aside, there are quarto update tinytex and quarto uninstall tinytex commands.\n\n\n\n\n\n\n\nQuarto head’s up\n\n\n\nTG: One issue I’m running into now is Quarto isn’t able to produce tagged PDF/A documents. At least not with what I tried which is just\n(it doesn’t understand how Quarto’s tables are produced and isn’t able to compile).\nQuarto is built on Pandoc which then uses pdflatex so the accessibility information needs to be passed through multiple levels. Pandoc has more info at 1 and 2. The suggestion with Pandoc is to use ConTeXt instead of LaTeX since ConTeXt always produces tagged documents, although Pandoc requires an extension in order to optimize for tagging.\nSummary: Quarto is not suitable for producing tagged PDFs at this time; the best workaround I can find is to use html output. The main drawback is figures in tikz need to be compiled separately."
+    "section": "",
+    "text": "quarto install tinytex\n\n\n\n\n\n\n\n\n\nQuarto head’s up\n\n\n\nTG: One issue I’m running into now is Quarto isn’t able to produce tagged PDF/A documents. At least not with what I tried which is just\n(it doesn’t understand how Quarto’s tables are produced and isn’t able to compile).\nQuarto is built on Pandoc which then uses pdflatex so the accessibility information needs to be passed through multiple levels. Pandoc has more info at 1 and 2. The suggestion with Pandoc is to use ConTeXt instead of LaTeX since ConTeXt always produces tagged documents, although Pandoc requires an extension in order to optimize for tagging.\nSummary: Quarto is not suitable for producing tagged PDFs at this time; the best workaround I can find is to use html output. The main drawback is figures in tikz need to be compiled separately.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Notes on Quarto</span>"
+    ]
   },
   {
     "objectID": "ms-word.html",
     "href": "ms-word.html",
     "title": "9  Notes on Microsoft Word",
     "section": "",
-    "text": "Here’s a government website for Word Documents: https://www.section508.gov/create/documents/"
+    "text": "Here’s a government website for Word Documents: https://www.section508.gov/create/documents/",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Notes on Microsoft Word</span>"
+    ]
   }
 ]
