@@ -51,6 +51,11 @@ The above recipe scores 100% on Blackboard's accessibility checker but more in d
 
 :::
 
+::: {.callout-note}
+## Caution
+This package is not meant for direct use for end users.
+:::
+
 * [tagpdf](https://ctan.org/pkg/tagpdf?lang=en)
 
 
