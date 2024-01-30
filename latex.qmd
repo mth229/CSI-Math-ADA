@@ -4,23 +4,44 @@
 >
 > From [LaTeX Guides](https://libguides.lib.msu.edu/c.php?g=995742&p=8207771)
 
-The support of tagged PDF within \LaTeX is ongoing. It appears that as of June 2023, the most upto date instructions would be:
+The support of tagged PDF within \LaTeX is ongoing. The most up-to-date report is [available here][1].
 
-1. \LaTeX is run with the testphase=phase-III and testphase=math extensions
+Here is a sample preamble with additions for accessibility:
+```tex
+\DocumentMetadata{
+    testphase=phase-III, % enables tagging
+    pdfstandard=A-2b     % declares that the pdf supports the A-2b standard
+                         % note: this is only metadata, it does not enforce
+                         % nor test anything
+}
+\documentclass{article}     % unclear if amsart is supported, needs more testing
+\usepackage[utf8]{inputenc} % unrelated to accessibility
+\usepackage{hyperref}
 
-2. Only base packages (`article`, `report`, `book`) are supported (not `amsart`?)
+\hypersetup{
+    pdflang=en-US,
+    pdftitle={<title of PDF>},
+    pdfauthor={<author>}
+}
+```
 
-3. `LuaTeX` is used as the front end rather than `pdflatex`
+Additional recommendations:
 
-It seems like the `tagpdf` package (mentioned below) is no longer needed for this to work.
+* Use the most up-to-date version of latex/pdflatex available.
+* PDFLaTeX or LuaLaTeX support tagging, other engines (e.g. XeTeX) are untested and may not work
+* As with HTML, you should write your document using structured tags (`\section`, `\subsection`) so that these can be communicated to e-readers.
+* Likewise, pictures should include alt-text, e.g. `\includegraphic[alt={Rubber Duckk}]{ducky.jpg}`
+* There is also an early prototype for tagging formulas. Use `\DocumentMetadata{testphase={phase-III,math}}` to load.
+* See the [LaTeX project's report][1] for full details
 
 ::: {.callout-note}
-## Untested
+## Note
+Documentation for supported key/values for `\DocumentMetadata` [is given here](https://texdoc.org/serve/documentmetadata-support/0).
 
-The above recipe is untested. Confirmation of it working would be welcome.
+I (TG) am unable to find more information about what level of the PDF/A standard is supported by LaTeX right now.
 
+The above recipe scores 100% on Blackboard's accessibility checker but more in depth testing is needed (and welcome!).
 :::
-
 
 
 ## Packages
@@ -68,3 +89,5 @@ Some links of interest (re: accessible LaTeX):
 * [https://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files](https://tex.stackexchange.com/questions/261537/a-guide-on-how-to-produce-accessible-pdf-files)
 
 * [PDF-A Compliant LaTeX](https://shen.hong.io/reproducible-pdfa-compliant-latex/)
+
+[1]: https://www.latex-project.org/publications/2023-UFi-FMi-TUG-tb137fischer-tagging23.pdf
