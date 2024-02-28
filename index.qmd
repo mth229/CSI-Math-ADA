@@ -1,5 +1,6 @@
 # ADA and the Math Department
 
+
 The Department of Mathematics takes seriously compliance with the requirements of the [ADA](https://www.ada.gov/).
 
 
@@ -29,7 +30,7 @@ Accessible mathematics herein is concerned with the ability of assistive technol
 
 ### Accessible PDF
 
-> Because LaTeX was designed as a typesetting program, PDF documents created using LaTeX do not include the document structure and tagging required for accessibility by default. It is possible to create accessible PDF documents using LaTeX but users will need to use additional LaTeX packages and should be aware of accessibility standards. The Accessibilty package in LaTeX can be used to add the structure, tagging, and alt text that PDF's created with LaTeX lack. 
+> Because LaTeX was designed as a typesetting program, PDF documents created using LaTeX do not include the document structure and tagging required for accessibility by default. It is possible to create accessible PDF documents using LaTeX but users will need to use additional LaTeX packages and should be aware of accessibility standards. The Accessibilty package in LaTeX can be used to add the structure, tagging, and alt text that PDF's created with LaTeX lack.
 >
 > From [LaTeX Guides](https://libguides.lib.msu.edu/c.php?g=995742&p=8207771)
 
@@ -37,7 +38,7 @@ Accessible mathematics herein is concerned with the ability of assistive technol
 
 
 > To make mathematical formulae accessible in you LaTeX document, you will need to load in the axessibility package into the preamble.
-> 
+>
 > \usepackage{axessibility}
 
 
@@ -64,4 +65,3 @@ Equations may give screen readers difficulty.
 All of HTML, PDF, and Word formats have the ability to structure a document.
 
 For example, HTML has header tags to provide a structure.
-

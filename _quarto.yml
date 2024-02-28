@@ -26,8 +26,15 @@ format:
     number-depth: 3
     toc-depth: 3
     link-external-newwindow: true
-    include-after: <script  src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@v0.1.4/index.min.js"  data-chatbotId="index-pdf-k527qtaap" ></script>
-
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ryersondmp/sa11y@3.1.0/dist/css/sa11y.min.css"/>
+          <script src="https://cdn.jsdelivr.net/combine/gh/ryersondmp/sa11y@3.1.0/dist/js/lang/en.umd.js,gh/ryersondmp/sa11y@3.1.0/dist/js/sa11y.umd.min.js"></script>
+    include-after-body:
+      - text: |
+          <script>Sa11y.Lang.addI18n(Sa11yLangEn.strings);
+          const sa11y = new Sa11y.Sa11y({checkRoot:"body"});
+          </script>
 execute:
   error: true
   freeze: false # auto
